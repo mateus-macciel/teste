@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: #121A27;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 550px;
+            height: 750px;
+            background: #121A27;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #FFFBFB;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFFBFB;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            width: 460px;
+            height: 55px;
+            border-radius: 8px;
+            border: 2px solid #232B38;
+            background: #1F2733;
+            color: #FFFBFB;
+            font-size: 16px;
+            padding: 0 15px;
+            outline: none;
+            display: block;
+            margin: 10px auto;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus {
+            border-color: #64ABFF;
+        }
+        
+        button {
+            width: 460px;
+            height: 45px;
+            border-radius: 28px;
+            background: #64ABFF;
+            color: #FFFBFB;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #8CBFF2;
+        }
+        
+        .divider {
+            font-size: 16px;
+            color: #FFFBFB;
+            margin: 10px 0;
+        }
+        
+        .register {
+            width: 460px;
+            height: 45px;
+            border-radius: 28px;
+            border: 2px solid #64ABFF;
+            background: none;
+            color: #64ABFF;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        .register:hover {
+            background: #64ABFF;
+            color: #FFFBFB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seu cofre está bloqueado</h1>
+        <p>Desbloqueie para ver suas senhas</p>
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Senha">
+        <button>Desbloquear</button>
+        <p class="divider">ou</p>
+        <button class="register">Criar conta</button>
+    </div>
+</body>
+</html>
